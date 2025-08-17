@@ -22,7 +22,21 @@
   }
 </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="index.js?1755167834949"></script>
+<script src="index.js?1755438155663"></script>
+<script>
+// Global Scripts
+	createjs.Sound.registerSound({
+	id: "click",
+	src: "sounds/click.mp3"
+})
+createjs.Sound.registerSound({
+    id: "correct_answer",
+    src: "sounds/correct_answer.mp3"
+})
+createjs.Sound.registerSound({
+	id: "wrong_answer",
+	src: "sounds/wrong_answer.mp3"
+})</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
